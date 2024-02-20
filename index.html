@@ -1,0 +1,70 @@
+<head>
+	<title>n</title>
+	<style>
+    body {  background-image: linear-gradient( to right, rgb(77, 202, 233),rgb(184, 219, 161))}
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin-top: 100px;
+		}
+		.button-container {
+			margin-top: 50px;
+		}
+		.button {
+			display: inline-block;
+			padding: 10px 20px;
+			margin: 0 10px;
+			font-size: 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.button:hover {
+			background-color: #4CAF50;
+		}
+		.yes-button {
+			background-color: #2E86C1;
+			color: white;
+		}
+		.no-button {
+			background-color: #F44336;
+			color: white;
+			position: relative;
+		}
+    img {
+      width: 130px;
+      height: 120px;
+    }
+	</style>
+</head>
+<body>
+	<img src='ảnh.png' alt='chèn ảnh vào'>
+	<h1 style="color: #FF69B4;">𝓝𝓸̣̂𝓲 𝓓𝓾𝓷𝓰</h1>        
+	<div class="button-container">
+            <button class="button yes-button" onclick="acceptLoversRequest()">𝔂𝓮𝓼</button>
+            <button class="button no-button" onclick="declineLoversRequest()" styl="">𝓝𝓞</button>
+        </div>
+        <script>
+            function declineLoversRequest() {
+    var button = document.querySelector('.no-button');
+    
+    var maxWidth = window.innerWidth - button.offsetWidth;
+    
+    var maxHeight = window.innerHeight - button.offsetHeight;
+    
+    var randomX = Math.floor(Math.random() * (maxWidth -1000));
+    
+    var randomY = Math.floor(Math.random() * (maxHeight -1000));
+    button.style.left = randomX + 'px';
+    
+    button.style.top = randomY + 'px';
+    
+    }
+        </script>
+    <script>
+     function acceptLoversRequest() {
+      document.body.innerHTML = "<h1><img src='anh2.png' alt='chèn ảnh vào'/><h1 style='color: #FF69B4;'>𝓝𝓸̣̂𝓲 𝓭𝓾𝓷𝓰 𝓽𝓲𝓮̂́𝓹</h1></h1>";
+    }
+    </script>
+</body>
+</html>
